@@ -96,7 +96,7 @@ public class MenuSpotify {
         System.out.print("Escriba el genero de la cancion: ");
         String genero = scan.nextLine();
 
-        System.out.print("Escriba la duración de la cancion de la forma ''n:nn'':");
+        System.out.print("Escriba la duración de la cancion de la forma ''n:nn'':   ");
         String duracion1=scan.nextLine();
         String seg[]=duracion1.split(":");
         int duracion=0;
