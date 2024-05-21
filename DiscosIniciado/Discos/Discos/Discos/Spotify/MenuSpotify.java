@@ -105,7 +105,7 @@ public class MenuSpotify {
         }
         
 
-        System.out.print("Desea agregar la cancion a la biblioteca del reproductor? (Si o No): ");
+        System.out.print("Desea agregar la cancion a la biblioteca del reproductor? (Si o No):");
         String modificar = scan.nextLine();
         
         if (modificar.equals("No")) {
