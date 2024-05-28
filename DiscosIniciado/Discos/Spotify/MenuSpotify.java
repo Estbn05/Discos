@@ -1,5 +1,6 @@
 
-package DiscosIniciado.Discos.Discos.Discos.Spotify;
+package DiscosIniciado.Discos.Spotify;
+
 
 import java.util.ArrayList;
 import java.util.Scanner;

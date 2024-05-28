@@ -1,4 +1,4 @@
-package DiscosIniciado.Discos.Discos.Discos.Spotify;
+package DiscosIniciado.Discos.Spotify;
 
 public class Cancion {
     
