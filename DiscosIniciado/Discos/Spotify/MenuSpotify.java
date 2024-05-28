@@ -48,6 +48,7 @@ public class MenuSpotify {
         System.out.println("4 = Crear una lista de reproduccion de canciones");
         System.out.println("5 = Reproducir canciones/listas");
         System.out.println("6 = Mostrar listas creadas");
+        System.out.println("7 = Mostrar Todas las canciones(solo el nombre)");
 
         System.out.println("____________________________________________________________________");
         System.out.println("");
@@ -72,12 +73,52 @@ public class MenuSpotify {
             case 1:
 
                 Cancion();
+                validarContinuar();
 
             break;
 
             case 2:
                  
-            break;    
+                elmCancion();
+                scan.nextLine();
+                validarContinuar();
+            break;
+
+            case 3:
+                //CODIGO HERE
+                scan.nextLine();
+                validarContinuar();
+            break; 
+
+            case 4:
+                //CODIGO HERE
+                scan.nextLine();
+                validarContinuar();
+            break; 
+
+            case 5:
+                //CODIGO HERE
+                scan.nextLine();
+                validarContinuar();
+
+            break; 
+
+            case 6:
+                //CODIGO HERE
+                scan.nextLine();
+                validarContinuar();
+            break; 
+
+            case 7:
+                if(CancionesCreadas.size()==0){
+                    System.out.println("No existen canciones en el reproductor");
+                }
+                else{
+                    allCanciones();
+                }
+                scan.nextLine();
+                validarContinuar();
+            break; 
         
             default:
                 break;
@@ -125,8 +166,27 @@ public class MenuSpotify {
         
     }
 
+    public static void allCanciones(){
+        for (int  i= 0; i< CancionesCreadas.size(); ++i) {
+            System.out.println(i+1 + ". " + CancionesCreadas.get(i).getTitulo());
+        }
+    }
+
+    public static void elmCancion(){
+       allCanciones();
+       System.out.println("Ingrese el numero de la cancion que desea borrar");
+       int posicionEliminar = scan.nextInt()-1;
+        CancionesCreadas.remove(posicionEliminar);
+    }
+
     public static void agregarBibiloteca(){
 
 
-    }}
+    }
+    public static void validarContinuar(){
+        System.out.println("\nPara continuar oprima ENTER");
+        scan.nextLine();
+
+    }
+}
 
